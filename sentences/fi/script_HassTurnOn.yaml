@@ -6,6 +6,8 @@ intents:
           - "<käynnistä> <nimi>"
           - "<laita> <nimi> <päälle>"
           - "<laita> <päälle> <nimi>"
+          - "<pane> <päälle> <nimi>"
+          - "<starttaa> <nimi>"
         requires_context:
           domain: script
         slots:

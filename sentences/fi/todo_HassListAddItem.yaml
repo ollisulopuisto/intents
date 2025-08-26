@@ -1,13 +1,13 @@
-language: "fi"
+language: "en"
 intents:
   HassListAddItem:
     data:
       - sentences:
-          - (lisää|laita) <item> <my_list>
-          - (lisää|laita) <my_list> <item>
+          - (lisää|laite|pane) <item> <my_list>
+          - (lisää|laita|pane) <my_list> <item>
         response: item_added
         requires_context:
           domain: todo
         expansion_rules:
-          my_list: "[minun|mun|miun|meidän] lista(lle|lleni|llemme) {name}"
-          item: "{shopping_list_item:item}"
+          my_list: "[minun|mun|miun|meidän] ostoslista[lle|lleni|llemme]"	
+          item: "{todo_list_item:item}"

@@ -3,7 +3,8 @@ intents:
   HassMediaPause:
     data:
       - sentences:
-          - "keskeytä [laite|soitin] <nimi>"
+          - "keskeytä [laite|soitin|toisto] <nimi>"
           - "<nimi> paussille"
+          - "pauseta <nimi>"
         requires_context:
           domain: media_player
