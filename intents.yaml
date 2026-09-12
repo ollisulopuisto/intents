@@ -1308,6 +1308,9 @@ HassMediaSearchAndPlay:
     media_class:
       description: "Type of media to search for (album, app, artist, channel, composer, contributing_artist, directory, episode, game, genre, image, movie, music, playlist, podcast, season, track, tv_show, url, video)"
       required: false
+    enqueue:
+      description: "Enqueue method (play, next, last, replace)"
+      required: false
   slot_combinations:
     default:
       description: "Search and play on the media player in the voice satellite's area"

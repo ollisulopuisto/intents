@@ -1,0 +1,14 @@
+---
+# HassMediaSearchAndPlay - area_only
+# example: play Pink Floyd in the Kitchen
+# slots:
+# - {area}
+# - {search_query}
+
+language: "fi"
+data:
+  - sentences:
+      - "(soita|toista) {search_query} {area_pääte}"
+    slots:
+      enqueue: "next"
+    response: "default"

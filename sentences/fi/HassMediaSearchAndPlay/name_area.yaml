@@ -1,0 +1,17 @@
+---
+# HassMediaSearchAndPlay - name_area
+# example: play Pink Floyd on the Sonos Speakers in the Kitchen
+# slots:
+# - {area}
+# - {name}
+# - {search_query}
+
+language: "fi"
+data:
+  - sentences:
+      - "(soita|toista) {search_query} [laitteella|laitteesta] {name} {area_pääte}"
+    name_domains:
+      - "media_player"
+    slots:
+      enqueue: "next"
+    response: "default"

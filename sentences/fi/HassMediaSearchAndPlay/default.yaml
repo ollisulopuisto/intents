@@ -1,0 +1,12 @@
+---
+# HassMediaSearchAndPlay - default
+# example: play Pink Floyd
+# slots: {search_query}
+
+language: "fi"
+data:
+  - sentences:
+      - "(soita|toista) {search_query}"
+    slots:
+      enqueue: "next"
+    response: "default"
