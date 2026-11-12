@@ -2,6 +2,7 @@ language: "fi"
 tests:
   - sentences:
       - "keskeytä TV"
+      - "pauseta TV"
     intent:
       name: HassMediaPause
       slots:

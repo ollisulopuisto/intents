@@ -126,6 +126,9 @@ lists:
   shopping_list_item:
     wildcard: true
 
+  todo_list_item:
+    wildcard: true
+
   message:
     wildcard: true
 
@@ -230,6 +233,7 @@ expansion_rules:
   avaa: "(avaa|aukaise|nosta)" # open|open|raise
   sulje: "(sulje|laske)" # close|lower
   laita: "(kytke|aseta|käännä|säädä|saada|pistä|muuta|laita)" # toggle|set|turn|adjust|put|change (for brightness, volume and covers, "säädä" is recognized as "saada" in STT)
+  pane: "(pane)" # put
 
   # Position - covers and valves
   asento: "{position}[[ ]%| prosenttia]"

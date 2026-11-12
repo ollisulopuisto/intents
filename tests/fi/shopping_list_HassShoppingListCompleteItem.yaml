@@ -1,0 +1,11 @@
+language: "fi"
+tests:
+  - sentences:
+      - poista omena ostoslistalta
+      - poista omena mun ostoslistalta
+      - poista ostoslistalta omena
+    intent:
+      name: HassShoppingListCompleteItem
+      slots:
+        item: "omena"
+    response: "omena poistettu"
