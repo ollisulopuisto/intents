@@ -4,6 +4,9 @@ tests:
       - "aja hyshys-moodi"
       - "käynnistä hyshys-moodi"
       - "laita hyshys-moodi päälle"
+      - "laita päälle hyshys-moodi"
+      - "pane päälle hyshys-moodi"
+      - "starttaa hyshys-moodi"
     intent:
       name: HassTurnOn
       slots:
